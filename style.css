@@ -23,7 +23,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: auto auto 2fr;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.8fr 3fr;
     text-align: center;
     justify-content: center;
 }
@@ -89,17 +89,24 @@ body {
 .mid {
     grid-row: 2/3;
     display: grid;
-    gap: 15px;
+    gap: 20px;
 }
 
 .bottom {
     grid-row: 3/4;
     display: grid;
-    gap: 15px;
+    gap: 20px;
+}
+
+.content {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: gray;
 }
 
 .projects {
-    grid-column: 2/3;
+    grid-column: 1/2;
     padding: 15px;
     text-align: left;
 }
@@ -112,23 +119,28 @@ body {
 }
 
 .projects .card {
-    background-color: white;
     padding: 20px;
-    width: 300px;
+    width: 280px;
     border: 2px solid pink;
 }
 
 .announcements {
-    grid-column: 3/4;
+    grid-row: 1/2;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
 }
 
-.trending {
-    grid-column: 3/4;
+.tasks {
+    grid-row: 2/3;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
 }
 
 .projects,
 .announcements,
-.trending {
+.tasks {
     background-color: gray;
 }
 
@@ -138,4 +150,12 @@ body {
 
 .right {
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 15px;
+}
+
+.card {
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
 }
