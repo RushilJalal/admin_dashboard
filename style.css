@@ -241,6 +241,7 @@ button {
     display: flex;
     justify-content: center;
     vertical-align: middle;
+    min-width: 100px;
 }
 
 button:hover {
@@ -273,4 +274,12 @@ button:active {
 
 .message {
     gap: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    padding-top: 10px;
+    padding-right: 20px;
 }
