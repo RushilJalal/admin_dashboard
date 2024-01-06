@@ -51,6 +51,7 @@ body {
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .username {
@@ -62,7 +63,7 @@ body {
     border-radius: 50%;
     height: 40px;
     width: auto;
-    align-self: center;
+    justify-self: right;
 }
 
 .navbar {
@@ -73,6 +74,7 @@ body {
     align-items: center;
     background-color: white;
     padding: 15px;
+    padding-left: 80px;
 }
 
 .navbar button {
@@ -83,6 +85,16 @@ body {
     width: auto;
     color: white;
     font-weight: bold;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.navbar-pfp {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 
 .sidebar {
@@ -106,6 +118,7 @@ body {
     align-items: center;
     display: flex;
     align-content: center;
+    padding-top: 20px;
 }
 
 .mid {
@@ -231,7 +244,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(139, 139, 231);
+    background-color: #6a9dc2;
     opacity: 0.9;
     color: white;
 }
@@ -252,4 +265,12 @@ button:active {
 .sidebar-icon {
     height: 20px;
     width: 20px;
+}
+
+.greeting {
+    text-align: left;
+}
+
+.message {
+    gap: 20px;
 }
