@@ -163,9 +163,8 @@ body {
     width: 280px;
 }
 
-.announcements {
+.announcements .card {
     grid-row: 1/2;
-    display: grid;
     gap: 10px;
     padding: 10px;
 }
@@ -184,12 +183,15 @@ body {
 
 .title {
     font-weight: bold;
+    text-align: left;
+    padding-bottom: 20px;
 }
 
 .right {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
     margin-right: 15px;
+    padding-top: 20px;
 }
 
 .card {
@@ -283,4 +285,10 @@ button:active {
     justify-content: right;
     padding-top: 10px;
     padding-right: 20px;
+}
+
+.projects>.title,
+.announcements .title,
+.tasks .title {
+    font-size: 18px;
 }
