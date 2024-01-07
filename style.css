@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     justify-content: center;
+    background-color: rgb(196, 190, 190);
 }
 
 .sidebar a {
@@ -23,9 +24,10 @@ body {
 .container {
     display: grid;
     grid-template-rows: auto auto 2fr;
-    grid-template-columns: 0.6fr 3fr;
+    grid-template-columns: 200px 3fr;
     text-align: center;
     justify-content: center;
+    background-color: rgb(196, 190, 190);
 }
 
 .header {
