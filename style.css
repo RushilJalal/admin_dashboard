@@ -135,6 +135,10 @@ body {
     gap: 15px;
 }
 
+.main {
+    background-color: rgb(196, 190, 190);
+}
+
 .content {
     grid-column: 2/4;
     display: grid;
